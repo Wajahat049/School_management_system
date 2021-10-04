@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ADMIN PORTAL AREA</title>
+</head>
+
+
+
+
+<body style="background-color: black; overflow: hidden;">
+    <div class="carousel slide carousel-fade" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+        </div>
+    </div>
+
+    <!-- Remeber to put all the content you want on top of the slider below the slider code -->
+    <div id="mySidebar" class="sidebar">
+        <h2 style="color: #d85803;font-family: 'Times New Roman'; font-size: 24px; font-style: italic;">ADMIN PROFILE</h2>
+        <div class="cs_student_detail font-family: 'Times New Roman'; font-size: 24px; font-style: bold;">
+        
+        <p style="font-size: 15px; color: #d85803" > <b> Admin ID: </b></p><p> {{AdminDetails.ADMIN_ID}} </p>
+        <p style="font-size: 15px; color: #d85803" ><b>Name: </b> </p><p> {{AdminDetails.ADMIN_NAME}} </p>
+        <p style="font-size: 15px; color: #d85803"><b>Email Address: </b></p><p> {{AdminDetails.ADMIN_EMAIL}} </p>
+        <p style="font-size: 15px; color: #d85803"><b>Phone no: </b> </p><p>  {{AdminDetails.ADMIN_PHONENO}} </p>
+        </div>
+
+        <a href="/">
+            <button class="button3" style="padding:  1% 2% 1% 2%; margin:3% 3% 3% 3%; font-size:14px">Log Out</button>
+           </a>
+     </div>  
+
+    <div class="title">
+        <div style="text-align: center; font-family: Lucida Bright; margin-top: 10px; margin-left:130px">
+            <span style="color: #ff6600;font-weight:bold; font-size: 45px;">WELCOME</span>
+            <span style="color:white;font-weight:bold; font-size: 45px; margin: 30px"> ADMIN</span>
+        </div>
+
+        <div style="background-image: linear-gradient(to bottom right,  #e65c00, #ff6600, #ff944d); margin:400px ; padding: 50px 50px 00px 50px; border-radius: 10px; margin-top: 20px;
+    width: 50%;
+    height: 50%;">
+            <img src="./Images/Admin.jpg"> 
+
+            <div style="text-align: center; font-family: se; padding: 20px;">
+                <a href="./TeacherInfo"><button
+                    class="button button2" style="font-size: 22px;">TEACHER</button> </a>
+                <a href="./StudentInfo"><button
+                    class="button button2" style="font-size: 22px;">STUDENT</button> </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        $('.carousel').carousel();
+    </script>
+
+
+
+</body>
+</html>

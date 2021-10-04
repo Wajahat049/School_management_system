@@ -1,0 +1,584 @@
+.body{
+  background: orange;
+  font-family: "Times New Roman";
+}
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: #ff6600; 
+    border: 5px solid #ff6600;
+    font-weight: bold ;
+    border-radius: 10px;
+  }
+
+  .button2 {
+    background-color: white; 
+    color: #ff6600; 
+    border: 5px solid white;
+    font-weight: bold ;
+    border-radius: 10px;
+  }
+
+  .button2:hover {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  .button1:hover {
+    background-color: #ff6600;
+    color: white;
+  }
+
+
+
+  .heading{
+    margin: 5px 0px 15px 340px;
+}
+.heading ul{
+    list-style: none;
+    display: inline-flex;
+    /* background:black; */
+    font-size: 35px;
+    color: #ff6600;
+    font-weight: bolder;
+
+}
+.heading ul li{
+  background: black;
+}
+.c_center_text{color: white;}
+
+
+.EMAIL{
+  margin-top: 500px;
+}
+  
+
+
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }
+}
+.item:nth-child(1) {
+  background: url('../Images/bg1.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.item:nth-child(2) {
+  background: url('../Images/bg2.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.item:nth-child(3) {
+  background: url('../Images/bg3.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.item:nth-child(4) {
+  background: url('../Images/bg4.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.item:nth-child(5) {
+  background: url('../Images/bg5.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.item:nth-child(6) {
+  background: url('../Images/bg6.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.item:nth-child(7) {
+  background: url('../Images/bg7.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.item:nth-child(8) {
+  background: url('../Images/bg8.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.item:nth-child(9) {
+  background: url('../Images/bg9.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.item:nth-child(10) {
+  background: url('../Images/bg10.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.item:nth-child(11) {
+  background: url('../Images/bg11.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.carousel {
+  z-index: -99;
+}
+.carousel .item {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.title {
+position: relative;
+text-align: center;
+margin-top: -0.6%;
+padding: 10px;
+text-shadow: 2px 2px #000;
+
+}
+
+
+
+
+
+
+.cs_studentdetail_text_heading{
+  margin:2% 2% 2% 2%;
+font-family: 'Times New Roman';
+color: #f07f34;
+text-shadow:2px 2px 2px black;
+margin-top: 50px;
+
+}
+ .cs_form{
+margin:2% 2% 2% 2%;
+font-family: 'Times New Roman';}
+
+
+.cs_form div{
+margin :1% 0% 1% 0% !important;
+}
+
+.cs_form div label{
+  font-size: 20px !important;
+  color: white;
+  margin: 1.2% 0% 1.2% 0%;
+
+}
+
+.cs_row { margin:2% 2% 2% 2% !important;}
+.cs_form div{
+  margin: 2% 0% 0% 0% !important;
+} 
+ .cs_input_box{
+  margin-left: -7%;
+} 
+
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right,  #ffd106, #ff6600);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 2.5% 1% 2% 2.5% ; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  font-style: italic;
+  
+
+}
+/* @media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+} */
+.cs_student_detail{
+  padding: 0% 0% 0% 10%;
+  color: azure;
+ 
+}
+
+
+
+
+.button3 {
+  background-color: white; 
+  color: #ff6600; 
+  border: 5px solid white;
+  font-weight: bold ;
+  font-style: italic;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.button3:hover {
+  background-color: #ff6600;
+  color: white;
+
+}
+.cs_student_view_button_1{
+  margin-top: 30%;
+}
+.cs_student_view_button_1 button{
+  margin: 2% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
+}
+
+.cs_exam_result{
+  background:rgba(0,0,0,0.3);
+  margin: 4% 4% 4% 26%;
+  padding:  2% 2% 2% 2%;
+  width: 820px;
+  height: 420px; 
+  transition: 0.4s;
+}
+
+.cs_exam_result:hover{
+  background:rgba(97, 88, 88, 0.3);
+
+}
+  
+  
+
+.cs_exam_result_table {
+color: rgb(255, 255, 255);
+border-collapse: collapse;
+width: 100%;
+font-style: italic;
+}
+.table_first_column{
+font-size: 20px;
+}
+.cs_exam_result_table td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .scrolling-wrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  white-space: nowrap;
+} */
+
+
+
+
+
+
+
+
+.form-box
+  {
+      width:380px;
+    height:450px;
+    position:relative;
+    margin:2% auto;
+    background:rgba(0,0,0,0.3);
+    padding:10px;
+    overflow-y: overlay !important;
+    overflow-x: hidden;
+  }
+
+  .form-box::-webkit-scrollbar{
+  background:transparent !important ;
+  width: 10px;
+  
+}
+
+.form-box::-webkit-scrollbar-thumb{
+  width: 10px !important;
+ background: #ff6600;
+}
+
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+  position: relative;
+  color: white;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #ff6600;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+  transition:.5s;
+  
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #ff6600;
+	border: 0;
+	outline: none;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: white;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+/* span
+{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+} */
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
+
+
+
+
+
+
+
+
+
+.adminvew_allstudent{
+  background: rgba(255,255,255,0.20);
+  margin: 4% 4% 4% 6%;
+  padding:  4% 4% 4% 4%;
+  width: 1100px;
+  height: 100%; 
+  transition: 0.4s;
+}
+
+/* .adminvew_allstudent :hover{
+  background: rgba(255,255,255,0.35);} */
+
+.cs_fee_entry{
+  padding:2% 5% 5% 25% !important;
+  background: rgba(255,255,255,0.20);
+ 
+}  
+.adminviewstudentdetail{
+  background-image: url(../Images/p1.gif);
+  /* background: url(images/bg.jpg) no-repeat center center fixed;  */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.table_first_column{
+  font-size: 18px;
+  color: #8f4c09;
+  }
+
+.cs_exam_result_table td {
+  border: 1px solid #dddddd;
+  padding: 0.6%;
+  text-align: center;
+  }
+
+  .cs_exam_result{
+    background: rgba(255,255,255,0.20);
+    margin: 4% 4% 4% 26%;
+    padding:  2% 2% 2% 2%;
+    width: 820px;
+    height: 420px; 
+    transition: 0.4s;
+  }
+  
+  .cs_exam_result:hover{
+    background: rgba(255,255,255,0.35);}

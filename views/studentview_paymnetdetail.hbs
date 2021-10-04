@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student view Payment Detail</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="background-image: url(../Images/p1.gif);">
+    <div id="mySidebar" class="sidebar" style="width: 15%; ">
+        <div class="cs_student_view_button_1 " style="margin: 5% 0% 0% 0%;">
+            <h3 style="color: #d85803; font-size: 22px;  margin-left: 17%;">View your</h3>
+            <a href="./StudentPortal"><button class="button3"
+                    style="font-style: italic; font-size: 13px;  margin:-5% 0% -2% 14%;"> Home</button> </a>
+            <a href="./studentview_subject"><button class="button3"
+                    style="font-style: italic; font-size: 13px;  margin:-5% 0% -2% 11%;"> Subject</button> </a>
+            <a href="./Images/StudentSchedule.jpg"><button class="button3"
+                    style="font-style: italic; font-size: 13px;margin:-5% 0% -2% 10%;">Schedule</button> </a>
+            <a href="./studentview_paymnetdetail"><button class="button3"
+                    style="font-style: italic; font-size: 13px; margin:-5% 0% -2% -1%;">Fee Payment Detail</button>
+            </a>
+            <a href="./studentview_examresult"><button class="button3"
+                    style="font-style: italic; font-size: 13px; margin:-5% 0% -2% -1%;">Examination Result</button>
+            </a>
+
+            <a href="/"><button class="button3"
+                style="font-style: italic; font-size: 13px;  margin:10% 0% -2% 16%;">LogOut</button> </a>
+        </div>
+    </div>
+      <div class="cs_exam_result">
+        <h2 style="font-style:italic;color: #e25d04; text-align: center;background-color: #ffa568;">Monthly Fees</h2>
+          <table class="cs_exam_result_table">
+               <tr class="table_first_column">
+                <td>Date of Payment</td>
+                <td>Amount</td>
+                <td>Status</td>
+            </tr>
+
+            {{#each OwnMonthlyFees}}
+            <tr>
+                <td>{{DATE}}</td>
+                <td>{{AMOUNT}}</td>
+                <td>{{FEE_STATUS}}</td>
+            </tr>
+            {{/each}}
+    
+        
+        </table>
+
+    <h2 style="font-style:italic;color: #e25d04; text-align: center;background-color: #ffa568;">Examination's Fees</h2>
+      <table class="cs_exam_result_table">
+            <tr class="table_first_column">
+                <td>Date of Payment</td>
+                <td>Amount</td>
+                <td>Status</td>
+            </tr>
+
+            {{#each OwnExamFees}}
+            <tr>
+                <td>{{DATE}}</td>
+                <td>{{AMOUNT}}</td>
+                <td>{{FEE_STATUS}}</td>
+            </tr>
+            {{/each}}
+    
+    </table>
+
+
+
+
+    <h2 style="font-style:italic;color: #e25d04; text-align: center;background-color: #ffa568;">Annual Fees</h2>
+      <table class="cs_exam_result_table">
+            <tr class="table_first_column">
+                <td>Date of Payment</td>
+                <td>Amount</td>
+                <td>Status</td>
+            </tr>
+
+            {{#each OwnAnnualFees}}
+            <tr>
+                <td>{{DATE}}</td>
+                <td>{{AMOUNT}}</td>
+                <td>{{FEE_STATUS}}</td>
+            </tr>
+            {{/each}}
+    
+    </table>
+       
+    </div>
+
+      
+</body>
+</html>

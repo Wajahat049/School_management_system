@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdminView Teacher Salary Status</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-image: url(../Images/p1.gif);">
+  <div class="adminvew_allstudent">
+    <h2
+      style="font-style:italic;color: #e25d04; text-align: center;background-color: #ffa568; padding: 0.6% 0.2% 0.8% 0.2%;">
+      Teacher Salary Status
+      <a href="./TeacherInfo"><button
+          style="position:absolute; margin:0.2% 0.2% 0.2% -45% ; padding: -1% -1% -1% -1% " class="button3">
+          Back</button></a>
+      <a href="./adminview_teacher_salary_entry"><button
+          style="position:absolute; margin:0.2% 0.2% 0.2% 20% ; padding: -1% -1% -1% -1% " class="button3">Enter
+          Salary</button></a>
+      <a href="./adminview_edit_salary"> <button style="position:absolute; margin:0.2% 0.2% 0.2% 12% "
+          class="button3 button4 cs_inside">Edit Salary</button></a>
+      <a href="./adminview_dlt_salary"><button style="position:absolute; margin:0.2% 0.2% 0.2% 3% "
+          class="button3 button4 cs_inside">Delete Salary</button></a>
+    </h2>
+    <table class="cs_exam_result_table">
+      <tr class="table_first_column">
+        <td>Teacher ID</td>
+        <td>Name</td>
+        <td>Date</td>
+        <td>Amount</td>
+        <td>Status</td>
+      </tr>
+      {{#each Status}}
+      <tr>
+        <td>{{TEACHER_ID}}</td>
+        <td>{{TEACHER_NAME}}</td>
+        <td>{{SALARY_DATE}}</td>
+        <td>{{AMOUNT}}</td>
+        <td>{{SALARY_STATUS}}</td>
+      </tr>
+      {{/each}}
+
+
+    </table>
+
+  </div>
+
+
+</body>
+
+</html>

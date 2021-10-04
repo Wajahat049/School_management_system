@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <title>Student Mark Edit</title>
+</head>
+
+<body style="background-image: url(../Images/p1.gif);">
+  <div class="container ">
+    <h2
+      style="font-family: 'Times New Roman';font-style:italic;color: #e25d04; text-align: center;background-color: #ffa568;margin:3% 2% 3% 1%;">
+      Student Marks Edit</h2>
+    <form action="/EditMarks" method="POST" class="cs_form cs_fee_entry">
+      <div class="row ">
+        <label for="colFormLabel" class="col-sm-3 col-form-label">Student ID</label>
+        <div class="col-sm-6">
+          <input name="STUDENT_ID" type="text" class="form-control" id="colFormLabel" placeholder="Student ID"
+            style="margin-left:-60px;">
+        </div>
+      </div>
+      <div class="row ">
+        <label for="colFormLabel" class="col-sm-3 col-form-label">Course Code</label>
+        <div class="col-sm-6">
+          <input name="COURSE_CODE" type="text" class="form-control" id="colFormLabel" placeholder="M1"
+            style="margin-left:-60px;">
+        </div>
+      </div>
+      <div class="row ">
+        <label for="colFormLabel" class="col-sm-3 col-form-label">Marks</label>
+        <div class="col-sm-6">
+          <input name="MARKS" type="number" class="form-control" id="colFormLabel" placeholder="Marks"
+            style="margin-left:-60px;">
+        </div>
+      </div>
+      <button type='submit' class="button3"
+        style="margin: 5% 5% 0% 30%; padding:0.5% 3.5% 0.5% 3.5%; font-size: 20px;">Update</button>
+
+    </form>
+    
+  </div>
+
+</body>
+
+</html>

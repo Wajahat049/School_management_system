@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdminView Al Courses of the Teacher</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-image: url(../Images/p1.gif);">
+  <div class="adminvew_allstudent">
+    <h2
+      style="font-style:italic;color: #e25d04; text-align: center;background-color: #ffa568; padding: 0.6% 0.2% 0.8% 0.2%;">
+      Subjects
+      <a href="./TeacherInfo"><button style="position:absolute; margin:0.2% 0.2% 0.2% -40% ; padding: -1% -1% -1% -1% "
+          class="button3">
+          Back</button></a>
+      <a href="./adminview_edit_subj"> <button style="position:absolute; margin:0% 0.2% 0.2% 28% "
+          class="button3 button4 cs_inside">Edit Subject</button></a>
+    </h2>
+    <table class="cs_exam_result_table">
+      <tr class="table_first_column">
+        <td>Course Code</td>
+        <td>Subject</td>
+        <td>Class</td>
+        <td>Teacher ID</td>
+        <td>Teaher's Name</td>
+      </tr>
+      {{#each Subjects}}
+      <tr>
+        <td>{{COURSE_CODE}}</td>
+        <td>{{SUBJECT_NAME}}</td>
+        <td>{{CLASS}}</td>
+        <td>{{TEACHER_ID}}</td>
+        <td>{{TEACHER_NAME}}</td>
+      </tr>
+      {{/each}}
+
+    </table>
+
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdminView Students Fee Status</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-image: url(../Images/p1.gif);">
+  <div class="adminvew_allstudent">
+    <h2
+      style="font-style:italic;color: #e25d04; text-align: center;background-color: #ffa568; padding: 0.2% 0.2% 0.4% 0.2%;">
+      Annuals Fee Status
+      <a href="./StudentInfo"><button
+          style="position:absolute; margin:0.2% 0.2% 0.2% -45% ; padding: -1% -1% -1% -1% " class="button3">
+          Back</button></a>
+      <a href="./Adminview_student_AnnualFee_entry"><button
+          style="position:absolute; margin:0.2% 0.2% 0.2% 23% ; padding: -1% -1% -1% -1% " class="button3">Enter
+          Fees</button></a>
+      <a href="./Adminview_student_AnnualFee_edit"> <button style="position:absolute; margin:0.2% 0.2% 0.2% 15% "
+          class="button3 button4 cs_inside">Edit Fees</button></a>
+      <a href="./Adminview_student_AnnualFee_dlt"><button style="position:absolute; margin:0.2% 0.2% 0.2% 6% "
+          class="button3 button4 cs_inside">Delete Fees</button></a>
+
+    </h2>
+    <table class="cs_exam_result_table">
+      <tr class="table_first_column">
+        <td>Student ID</td>
+        <td>Name</td>
+        <td>Class</td>
+        <td>Date of Payment</td>
+        <td>Amount</td>
+        <td>Status</td>
+
+      </tr>
+       {{#each Fees}}
+      <tr>
+        <td>{{STUDENT_ID}}</td>
+        <td>{{STUDENT_NAME}}</td>
+        <td>{{STUDENT_CLASS}}</td>
+        <td>{{PAYMENT_DATE}}</td>
+        <td>{{AMOUNT}}</td>
+        <td>{{FEE_STATUS}}</td>
+      </tr>
+      {{/each}}
+
+    </table>
+
+  </div>
+
+  <div class="adminvew_allstudent">
+    <h2 style="font-style:italic;color: #e25d04; text-align: center;background-color: #ffa568;">Students Examination Fee
+      Status
+      <a href="./Adminview_student_ExamFee_entry"><button
+          style="position:absolute; margin:0% 0.2% 0.2% 20% ; padding: -1% -1% -1% -1% " class="button3">Enter
+          Fees</button></a>
+      <a href="./Adminview_student_ExamFee_edit"> <button style="position:absolute; margin:0% 0.2% 0.2% 13% "
+          class="button3 button4 cs_inside">Edit Fees</button></a>
+      <a href="./Adminview_student_ExamFee_dlt"><button style="position:absolute; margin:0% 0.2% 0.2% 5% "
+          class="button3 button4 cs_inside">Delete Fees</button></a>
+
+    </h2>
+    <table class="cs_exam_result_table">
+      <tr class="table_first_column">
+        <td>Student ID</td>
+        <td>Name</td>
+        <td>Class</td>
+        <td>Date of Payment</td>
+        <td>Amount</td>
+        <td>Status</td>
+      </tr>
+      {{#each ExamFees}}
+      <tr>
+        <td>{{STUDENT_ID}}</td>
+        <td>{{STUDENT_NAME}}</td>
+        <td>{{STUDENT_CLASS}}</td>
+        <td>{{EXAMFEE_DATE}}</td>
+        <td>{{AMOUNT}}</td>
+        <td>{{FEE_STATUS}}</td>
+      </tr>
+      {{/each}}
+
+    </table>
+
+  </div>
+
+  <div class="adminvew_allstudent">
+    <h2 style="font-style:italic;color: #e25d04; text-align: center;background-color: #ffa568;">Students Monthly Fee
+      Status
+      <a href="./Adminview_student_MonthlyFee_entry"><button
+          style="position:absolute; margin:0% 0.2% 0.2% 22% ; padding: -1% -1% -1% -1% " class="button3">Enter
+          Fees</button></a>
+      <a href="./Adminview_student_MonthlyFee_edit"> <button style="position:absolute; margin:0% 0.2% 0.2% 15% "
+          class="button3 button4 cs_inside">Edit Fees</button></a>
+      <a href="./Adminview_student_MonthlyFee_dlt"><button style="position:absolute; margin:0% 0.2% 0.2% 7% "
+          class="button3 button4 cs_inside">Delete Fees</button></a>
+
+    </h2>
+    <table class="cs_exam_result_table">
+      <tr class="table_first_column">
+        <td>Student ID</td>
+        <td>Name</td>
+        <td>Class</td>
+        <td>Date of Payment</td>
+        <td>Amount</td>
+        <td>Status</td>
+
+      </tr>
+      {{#each MonthlyFees}}
+      <tr>
+        <td>{{STUDENT_ID}}</td>
+        <td>{{STUDENT_NAME}}</td>
+        <td>{{STUDENT_CLASS}}</td>
+        <td>{{MONTHLYFEE_DATE}}</td>
+        <td>{{AMOUNT}}</td>
+        <td>{{FEE_STATUS}}</td>
+      </tr>
+      {{/each}}
+
+    </table>
+
+  </div>
+
+
+</body>
+
+</html>

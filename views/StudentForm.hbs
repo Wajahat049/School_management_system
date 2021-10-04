@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!---we had linked our css file----->
+</head>
+
+<body>
+    <div class="carousel slide carousel-fade" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+            <div class="item">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="full-page">
+        <div style="text-align: center; font-family: Lucida Bright; padding-top: 40px;">
+            <span style="color: #ff6600;font-weight:bold; font-size: 42px; ">STUDENT LOGIN</span>
+            <span style="color:white;font-weight:bold; font-size: 42px;">/ SIGNUP</span>
+        </div>
+        <div id='login-form' class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Sign Up</button>
+                </div>
+                <form action="/StudentLogin" method="POST" id='login' class='input-group-login'>
+                    <input name="STUDENT_NAME" id="STUDENT_NAME" type='text' class='input-field' placeholder='Name' required>
+                    <input name="STUDENT_EMAIL" id="STUDENT_EMAIL" type='email' class='input-field' placeholder='Email' required>
+                    <input name="STUDENT_PASSWORD" id="STUDENT_PASSWORD" type='password' class='input-field' placeholder='Enter Password'
+                        required>
+                    <button type='submit' class='submit-btn'> Log In </button>
+                </form>
+
+
+                <form action="/StudentSignUp" method="POST" id='register' class='input-group-register'>
+                    <input name="STUDENT_NAME" id="STUDENT_NAME"type='text' class='input-field' placeholder='Name' required>
+                    <input name="STUDENT_EMAIL" id="STUDENT_EMAIL" type='email' class='input-field' placeholder='Email' required>
+                    <input name="STUDENT_PASSWORD" id="STUDENT_PASSWORD" type='password' class='input-field' placeholder='Enter Password' required>
+                    <input name="STUDENT_GENDER" id="STUDENT_GENDER" type='text' class='input-field' placeholder='Gender' required>
+                    <input name="STUDENT_CLASS" id="STUDENT_CLASS" type='text' class='input-field' placeholder='Class' required>
+                    <input name="STUDENT_PHONENO" id="STUDENT_PHONENO" type='text' class='input-field' placeholder='Phone No#' required>
+                    <input name="STUDENT_DATE_OF_BIRTH" id="STUDENT_DATE_OF_BIRTH" type='date' class='input-field' placeholder='Date of Birth' required>
+                    <input name="STUDENT_DATE_OF_ADMISSION" id="STUDENT_DATE_OF_ADMISSION" type='date' class='input-field' placeholder='Date of Admission' required>
+                    <button type='submit' class='submit-btn'>Sign Up</button>
+                </form>
+        
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+<script src="index.js"></script>
+
+</html>

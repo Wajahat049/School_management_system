@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Salary Detail</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-image: url(../Images/p1.gif);">
+    <div id="mySidebar" class="sidebar" style="width:20%;">
+        <div class="cs_student_view_button_1 " style="margin: 2% 0% 0% 0%;">
+            <h3
+                style="color: #d85803; font-size: 15px; font-family: 'Times New Roman'; font-size: 24px; font-style: italic;; margin-left: 17%;">
+                View your</h3>
+            <a href="./TeacherPortal"><button class="button3"
+                    style="font-style: italic; font-size: 13px;  margin:-5% 0% -2% 14%;"> Home</button> </a>
+            <a href="./Images/TeacherSchedule.jpeg"><button class="button3"
+                    style="font-style: italic; font-size: 13px; margin:-5% 0% -2% 10%;">Schedule</button> </a>
+            <a href="./teachersalarydetail"><button class="button3"
+                    style="font-style: italic; font-size: 13px; margin:-5% 0% -2% 8%;">Salary Detail</button> </a>
+            <a href="./teacherview_result"><button class="button3"
+                    style="font-style: italic; font-size: 13px; margin:-5% 0% -2% 0%;">Examination Result</button> </a>
+             <a href="/"><button class="button3"
+          style="font-style: italic; font-size: 13px; margin:10% 0% 0% 17%;">Log Out</button> </a>
+    </div>
+    </div>
+    </div>
+    <div class="cs_exam_result">
+        <h2 style="font-style:italic;color: #e25d04; text-align: center;background-color: #ffa568;">Month's Salary</h2>
+        <table class="cs_exam_result_table">
+            <tr class="table_first_column">
+                {{!-- <td>Month Name</td> --}}
+                <td>Date of Payment</td>
+                <td>Amount</td>
+                <td>Status</td>
+            </tr>
+
+            {{#each OwnSalary}}
+            <tr>
+                {{!-- <td>{{MONTH_NAME}}</td> --}}
+                <td>{{SALARY_DATE}}</td>
+                <td>{{AMOUNT}}</td>
+                <td>{{SALARY_STATUS}}</td>
+            </tr>
+            {{/each}}
+        </table>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
